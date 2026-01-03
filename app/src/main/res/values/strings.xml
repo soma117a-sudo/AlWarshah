@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الورشة - AlWarshah</string>
+    <string name="welcome_text">أهلاً بك في الورشة\nWelcome to AlWarshah</string>
+    <string name="email_hint">البريد الإلكتروني / Email</string>
+    <string name="password_hint">كلمة المرور / Password</string>
+    <string name="login_button">دخول / Login</string>
+    <string name="register_button">تسجيل جديد / Register</string>
+</resources>
