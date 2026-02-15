@@ -94,8 +94,8 @@ public class StarsBackgroundView extends View {
             
             // Ensure stars are within bounds
             if (x >= 0 && x <= width && y >= 0 && y <= height) {
-                // Star size based on golden ratio
-                float baseSize = (float) (2.0 + (i % (int)PHI) * PHI);
+                // Star size based on golden ratio with variation
+                float baseSize = (float) (2.0 + (i % 5) * (PHI / 2));
                 
                 // Brightness varies for depth effect
                 float brightness = 0.5f + random.nextFloat() * 0.5f;
@@ -126,7 +126,7 @@ public class StarsBackgroundView extends View {
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                float time = (Float) animation.getAnimatedValue();
+                float time = (float) animation.getAnimatedValue();
                 updateStars(time);
                 invalidate();
             }

@@ -17,8 +17,9 @@ Stars are positioned using the **golden angle** (≈137.5°), which is derived f
 - Radius grows with square root for uniform density
 
 ### 3. Star Sizing
-- Base size is calculated using golden ratio: `2.0 + (i % φ) * φ`
-- Creates natural variation in star sizes
+- Base size is calculated with variation: `2.0 + (i % 5) * (φ / 2)`
+- Creates natural variation in star sizes across 5 size categories
+- Each size group is proportional to the golden ratio
 - Glow radius is star size multiplied by φ
 
 ### 4. Animation Intelligence
